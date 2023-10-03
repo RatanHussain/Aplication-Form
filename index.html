@@ -12,9 +12,9 @@
 		<div class="container">
 			<h2>Form</h2>
 			<form
-				action="https://sheetdb.io/api/v1/7caghcl72n0rw"
+				action="https://sheetdb.io/api/v1/4k0qn3xldxtcl"
 				method="post"
-				id="sheetdb-form">
+				id="sheetdb">
 				<div class="all status">
 					<label for="data[name]">Name</label>
 					<input
@@ -83,17 +83,17 @@
 			<p>Ratan Hussain</p>
 		</div>
 		<script>
-			var form = document.getElementById('sheetdb-form');
+			var form = document.getElementById('sheetdb');
 			form.addEventListener('submit', (e) => {
 				e.preventDefault();
 				fetch(form.action, {
 					method: 'POST',
-					body: new FormData(document.getElementById('sheetdb-form')),
+					body: new FormData(document.getElementById('sheetdb')),
 				})
 					.then((response) => response.json())
 					.then((html) => {
 						// you can put any JS code here
-						window.
+						location.reload();
 					});
 			});
 		</script>
